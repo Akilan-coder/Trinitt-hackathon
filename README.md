@@ -1,2 +1,4 @@
-# Trinitt-hackathon
-All the code and files for the hackathon will be uploaded here
+# Dialog Box Editor
+
+all the required settings for a single div is available
+
