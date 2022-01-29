@@ -1,0 +1,7 @@
+.barcontainer {
+display: flex;
+flex-direction: row;
+
+border: blue 2px solid;
+
+}

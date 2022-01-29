@@ -1,0 +1,12 @@
+.optionbar{
+    border:yellow 2px solid;
+   
+    height: 32vh;
+    width: 90vw;
+align-self: flex-end;
+}
+
+.optionsdisplayelements{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
