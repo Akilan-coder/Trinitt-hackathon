@@ -8,5 +8,6 @@ for(let i=0;i<buttonoptionsclassarray.length;i++)
     
     buttonoptiondiv.className=buttonoptionsclassarray[i]
     buttonoptiondiv.innerText="SAMPLE"
+    buttonoptiondiv.setAttribute('draggable',true);
    buttonoptionsarray.push(buttonoptiondiv)
 }

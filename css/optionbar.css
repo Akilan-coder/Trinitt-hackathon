@@ -4,6 +4,9 @@
     height: 32vh;
     width: 90vw;
 align-self: flex-end;
+resize: none;
+overflow-y: scroll
+
 }
 
 .optionsdisplayelements{

@@ -2,6 +2,7 @@
     border:red 2px solid;
     width: 10rem;
     height: 99.5vh;
+    resize: none;
 }
 .buttonclass h1 {
     font-size: medium;

@@ -1,16 +1,18 @@
-let displayoptionsfunction=(options,perrow)=>
+let columndivs=[]  
+let displayoptionsfunction=(options,perrow,component)=>
 {
-  
+   
 if(document.querySelector("#optioncontainerid"))
 {
     document.querySelector("#optioncontainerid").remove()
+    columndivs=[]
 }
    let optiondiv=document.querySelector(".optionbar")
 
      let containerdiv=document.createElement('div')
      containerdiv.className='container'
      containerdiv.id='optioncontainerid'
-
+console.log("inside display---   ",options)
 
     perrow=12/perrow;
      let rowdiv=document.createElement('div');
@@ -21,7 +23,20 @@ if(document.querySelector("#optioncontainerid"))
          columndiv=document.createElement('div')
          columndiv.className='col-'+perrow.toString()
         columndiv.style='margin-top:10px;margin-bottom:10px'
-         columndiv.appendChild(options[i])
+        if(component=="buttons")
+        {
+            columndiv.appendChild(options[i])
+            console.log(options[i])
+         
+        }
+        else
+        {
+columndiv.innerHTML=options[i]
+   columndivs.push(columndiv)
+        }
+        console.log('beefore---- ',options[i])
+        
+        
          rowdiv.appendChild(columndiv)
 
     //       if(i%3==0)
@@ -64,4 +79,5 @@ if(document.querySelector("#optioncontainerid"))
      }
      containerdiv.appendChild(rowdiv)
      optiondiv.appendChild(containerdiv)
+     console.log("comatainer mane ",containerdiv)
 }

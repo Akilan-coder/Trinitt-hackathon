@@ -3,5 +3,9 @@
     align-self: flex-start;
     height:67.5vh;
     width:90vw;
+    resize: both;
+    overflow: auto;
+    max-width: 90vw;
+max-height: 67.5vh;
 
 }

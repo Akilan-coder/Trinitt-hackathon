@@ -12,6 +12,9 @@
 <link rel="stylesheet" href="./css/optionbar.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.css">
 <script src="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.js"></script>
+<script src="./js/options/buttonoptions.js"></script>
+<script src="./js/options/cardoptions.js"></script>
+<script src="./js/options/navbaroptions.js"></script>
 <script src="./js/functions/draggable.js"></script>
 <body>
     <!-- JavaScript Bundle with Popper -->
@@ -24,11 +27,24 @@
           <h1 >Buttons</h1>
 
     </div>
-
+    <div class="cardsclass">
+        <h1>CARDS</h1>
+    </div>
+    <div class="navbarclass">
+        <h1>NAVBAR</h1>
+    </div>
+    <div class="textareaclass">
+        <h1>TEXT</h1>
+    </div>
+    <button type="button" id="imageareatext" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
 </div>
 <div>
+    <div>
 <div class="websitecanvas" id="websitecanvasid">
 
+</div>
 </div>
 <div class="optionbar" >
     <div class="container" id="optioncontainerid">
@@ -37,7 +53,28 @@
 
 </div>
 </div>
-<script src="./js/options/buttonoptions.js"></script>
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input placeholder="image url " id="imageurlid" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="modalsavebutton">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/functions/displayoptions.js"></script>
   <script src="./js/smallscripts/buttonoptions.js"></script>
 </div>
