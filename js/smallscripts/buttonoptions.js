@@ -25,7 +25,21 @@ navbartext.addEventListener('click',()=>
 })
 textareatext.addEventListener('click',()=>
 {
-    init('textareas')
+   
+    /*<div class="comp" id="comp">
+       
+        <div>bruh</div>
+        <div>sample</div>
+        <div class="resizer ne"></div>
+        <div class="resizer nw"></div>
+        <div class="resizer sw"></div>
+        <div class="resizer se"></div>
+    </div>*/
+
+    
+    // allmain()
+    // alldiag()
+
 })
 imageareatext.addEventListener('click',()=>
 {

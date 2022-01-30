@@ -196,21 +196,122 @@ element.style.left=(e.x).toString()+"px"
 
 if(component=="textareas")
 {
-    let textareadiv=document.createElement("div")
-    textareadiv.style.border="black 2px solid"
-    textareadiv.style.width="5rem"
-    textareadiv.style.height="5rem"
-    textareadiv.setAttribute('draggable',true)
-    textareadiv.id=(Math.random()*1000).toString()
-    let websitecanvas = document.getElementById('websitecanvasid')
-textareadiv.addEventListener('dragend',(e)=>
-{
-let element = document.getElementById(e.target.id)
-element.style.position='absolute'
-element.style.top=(e.y).toString()+"px"
-element.style.left=(e.x).toString()+"px"
-})
-    websitecanvas.appendChild(textareadiv)
+    console.log("it is truth ");
+
+    // let maindiv=document.createElement('div')
+    // maindiv.className='comp'
+    // maindiv.id='comp'
+    // let nediv=document.createElement('div')
+    // nediv.className='resizer ne'
+    // let nwdiv=document.createElement('div')
+    // nwdiv.className='resizer nw'
+    // let swdiv=document.createElement('div')
+    // swdiv.className='resizer sw'
+    // let sediv = document.createElement('se')
+    // sediv.className='resizer se'
+    // let content = document.createElement('div')
+    // maindiv.appendChild(nediv)
+    // maindiv.appendChild(nwdiv)
+    // maindiv.appendChild(swdiv)
+    // maindiv.appendChild(sediv)
+    // maindiv.appendChild(content)
+    // let canvas=document.getElementById('websitecanvasid')
+    // canvas.appendChild(maindiv)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+//     let textareadiv=document.createElement("div")
+//     textareadiv.style.border="black 2px solid"
+//     textareadiv.style.width="5rem"
+//     textareadiv.style.height="5rem"
+//     textareadiv.setAttribute('draggable',true)
+//     textareadiv.setAttribute('visibility',true)
+//     textareadiv.id=(Math.random()*1000).toString()
+
+//     textareadiv.addEventListener('click',(e)=>
+//     {
+//         let textareadivs=document.createElement("div")
+//      textareadivs.className='comp'
+//      textareadivs.id="comp"
+//      let text=document.getElementById(e.target.id)
+//      console.log(document.getElementById(e.target.id).getAttribute('visibility'));     
+//      if(document.getElementById(e.target.id).getAttribute('visibility'))
+          
+//           {
+//               console.log("on")
+//              let nediv=document.createElement("div")
+
+// nediv.className="resizer ne"
+// textareadivs.appendChild(text)
+// textareadivs.appendChild(nediv)
+// let nwdiv=document.createElement("div")
+// nwdiv.className="resizer nw"
+// textareadivs.appendChild(nediv)
+// let swdiv=document.createElement("div")
+// swdiv.className="resizer sw"
+// textareadivs.appendChild(nediv)
+// let sediv=document.createElement("div")
+// sediv.className="resizer se"
+// //dialogelementtextarea.appendChild(document.createElement('div').className)
+// textareadivs.appendChild(sediv)
+// console.log(e.target.id);
+// let samplevar=document.getElementById(e.target.id)
+// samplevar.setAttribute('visibility',false)
+// document.getElementById('websitecanvasid').appendChild(textareadivs) 
+
+//           }
+//           else
+//           {
+//               console.log("off");
+              
+
+// textareadivs.appendChild(textareadiv)
+//           }
+
+//     })
+//    let websitecanvas = document.getElementById('websitecanvasid')
+// textareadiv.addEventListener('dragend',(e)=>
+// {
+// let element = document.getElementById(e.target.id)
+// element.style.position='absolute'
+// element.style.top=(e.y).toString()+"px"
+// element.style.left=(e.x).toString()+"px"
+// })
+// console.log("hit it man ");
+// // let dialogelementtextarea=document.createElement('div')
+// // dialogelementtextarea.className="comp"
+// // dialogelementtextarea.id="comp"
+// // dialogelementtextarea.appendChild(textareadiv)
+// // let nediv=document.createElement("div")
+// // nediv.className="resizer ne"
+
+// // dialogelementtextarea.appendChild(nediv)
+// // let nwdiv=document.createElement("div")
+// // nwdiv.className="resizer nw"
+// // dialogelementtextarea.appendChild(nediv)
+// // let swdiv=document.createElement("div")
+// // swdiv.className="resizer sw"
+// // dialogelementtextarea.appendChild(nediv)
+// // let sediv=document.createElement("div")
+// // sediv.className="resizer se"
+// // //dialogelementtextarea.appendChild(document.createElement('div').className)
+// // dialogelementtextarea.appendChild(sediv)
+// websitecanvas.appendChild(textareadiv)
+
 
 }
 

@@ -11,11 +11,20 @@
     <link rel="stylesheet" href="./css/websitecanvas.css">
 <link rel="stylesheet" href="./css/optionbar.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.css">
+<link rel="stylesheet" href="main.css">
+<!-- One of the following themes -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+<!-- Modern or es5 bundle -->
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.js"></script>
 <script src="./js/options/buttonoptions.js"></script>
 <script src="./js/options/cardoptions.js"></script>
 <script src="./js/options/navbaroptions.js"></script>
+
 <script src="./js/functions/draggable.js"></script>
+
 <body>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -35,6 +44,7 @@
     </div>
     <div class="textareaclass">
         <h1>TEXT</h1>
+        
     </div>
     <button type="button" id="imageareatext" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
@@ -43,7 +53,24 @@
 <div>
     <div>
 <div class="websitecanvas" id="websitecanvasid">
-
+   
+  
+    <div class="comp" id="comp">
+       
+        <div>COMEON</div>
+        
+        <div class="resizer ne"></div>
+        <div class="resizer nw"></div>
+        <div class="resizer sw"></div>
+        <div class="resizer se"></div>
+       </div>
+        <div>
+       
+     
+    </div>
+</div>
+     
+</div>
 </div>
 </div>
 <div class="optionbar" >
@@ -74,9 +101,46 @@
       </div>
     </div>
   </div>
-
-  <script src="js/functions/displayoptions.js"></script>
-  <script src="./js/smallscripts/buttonoptions.js"></script>
+<div>
+    <div class="diag" style="z-index: 2;">
+        <span>box color</span>
+        <div class="color-picker"></div>
+        <span>font size</span>
+        <div class="fontsizebar"> 
+            
+        <input type="range" min="5" max="400"  value = "1" id="myRange" class = "slider">
+        </div>
+        <span>font color</span>
+        <div class="font-color-picker"></div>
+        <span>text position</span>
+        <div class="textpos">
+            <button class="right" id="right">right</button>
+            <button class="centre" id= "centre">centre</button>
+            <button class="left" id = "left">left</button>
+        </div>
+      <span>box radius</span>
+      <div class="boxshapebar"> 
+            
+        <input type="range" min="1" max="50"  value = "1" id="boxshape" class = "shapeslider">
+        </div>
+      <span>edit text</span>
+      <br>
+        <input type="text" id="innertext" placeholder="change text here">
+<br>
+        <span>box size</span>
+        <div class="boxsizebar"> 
+        <span>width</span>
+        <input type="range" min="5" max="4000"  value = "1" id="XRange" class = "wslider">   
+        <span>height</span>
+        <input type="range" min="5" max="1000"  value = "1" id="YRange" class = "hslider">
+        </div>
+    </div>
 </div>
+  <script src="js/functions/displayoptions.js"></script>
+</div>
+<script  src="./main.js"></script>
+<script src="./diag.js"></script>
+<script src="./js/smallscripts/buttonoptions.js"></script>
+
 </body>
 </html>
